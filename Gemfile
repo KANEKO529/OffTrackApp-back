@@ -7,10 +7,12 @@ ruby "3.3.4"
 gem "rails", "~> 7.1.0"
 
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+gem "sqlite3", "~> 1.4", group: [:development, :test, :production]  # 開発環境では SQLite3 を使用
 
-# Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 6.0"
+# Webサーバー
+gem "puma", "~> 6.0", group: [:development, :test]  # 開発環境では Puma を使用
+# 本番環境のみ Unicorn を使用
+gem "unicorn", group: :production if RUBY_PLATFORM !~ /mswin|mingw|cygwin/  # WindowsではUnicornを除外
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
@@ -40,17 +42,6 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
-
-group :development do
-  # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  # gem "spring"
-  gem 'capistrano', '~> 3.17'
-  gem 'capistrano-rails'
-  gem 'capistrano-bundler'
-  gem 'capistrano-rbenv'
-  gem 'capistrano3-unicorn'
-end
-
 
 gem "geocoder", "~> 1.8"
 
