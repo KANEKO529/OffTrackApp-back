@@ -12,8 +12,9 @@ gem "sqlite3", "~> 1.4", group: [:development, :test, :production]  # 開発環�
 # Webサーバー
 gem "puma", "~> 6.0", group: [:development, :test]  # 開発環境では Puma を使用
 # 本番環境のみ Unicorn を使用
-gem "unicorn", group: :production if RUBY_PLATFORM !~ /mswin|mingw|cygwin/  # WindowsではUnicornを除外
-
+group :production do
+  gem "unicorn"
+end
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 

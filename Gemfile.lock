@@ -108,6 +108,7 @@ GEM
       pp (>= 0.6.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
+    kgio (2.11.4)
     logger (1.6.6)
     loofah (2.24.0)
       crass (~> 1.0.2)
@@ -184,6 +185,7 @@ GEM
       rake (>= 12.2)
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
+    raindrops (0.20.1)
     rake (13.2.1)
     rdoc (6.12.0)
       psych (>= 4.0.0)
@@ -199,6 +201,9 @@ GEM
       concurrent-ruby (~> 1.0)
     tzinfo-data (1.2025.1)
       tzinfo (>= 1.0.0)
+    unicorn (6.1.0)
+      kgio (~> 2.6)
+      raindrops (~> 0.7)
     websocket-driver (0.7.7)
       base64
       websocket-extensions (>= 0.1.0)
@@ -219,6 +224,7 @@ DEPENDENCIES
   rails (~> 7.1.0)
   sqlite3 (~> 1.4)
   tzinfo-data
+  unicorn
 
 RUBY VERSION
    ruby 3.3.4p94
