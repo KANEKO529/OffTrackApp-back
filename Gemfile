@@ -44,5 +44,14 @@ end
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem 'capistrano', '~> 3.17'
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rbenv'
+  gem 'capistrano3-unicorn'
 end
 
+
+gem "geocoder", "~> 1.8"
+
+gem "activerecord-import", "~> 2.1"
