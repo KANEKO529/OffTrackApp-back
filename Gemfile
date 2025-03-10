@@ -47,3 +47,6 @@ end
 gem "geocoder", "~> 1.8"
 
 gem "activerecord-import", "~> 2.1"
+
+gem 'sprockets-rails'
+

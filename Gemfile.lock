@@ -192,6 +192,13 @@ GEM
     reline (0.6.0)
       io-console (~> 0.5)
     securerandom (0.4.1)
+    sprockets (4.2.1)
+      concurrent-ruby (~> 1.0)
+      rack (>= 2.2.4, < 4)
+    sprockets-rails (3.5.2)
+      actionpack (>= 6.1)
+      activesupport (>= 6.1)
+      sprockets (>= 3.0.0)
     sqlite3 (1.7.3-x64-mingw-ucrt)
     sqlite3 (1.7.3-x86_64-linux)
     stringio (3.1.5)
@@ -222,6 +229,7 @@ DEPENDENCIES
   puma (~> 6.0)
   rack-cors
   rails (~> 7.1.0)
+  sprockets-rails
   sqlite3 (~> 1.4)
   tzinfo-data
   unicorn
