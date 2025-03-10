@@ -65,6 +65,9 @@ Rails.application.configure do
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
 
+  config.secret_key_base = ENV["SECRET_KEY_BASE"]
+
+
   # Don't log any deprecations.
   config.active_support.report_deprecations = false
 
