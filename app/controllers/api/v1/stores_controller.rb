@@ -12,7 +12,7 @@ class Api::V1::StoresController < ApplicationController
     Rails.logger.debug "latitude: #{latitude}" # リクエストパラメータ全体を確認
     Rails.logger.debug "longitude: #{longitude}" # 強制パラメータ後の確認
 
-    nearby_stores = Store.near([latitude, longitude], 2) # 2km 以内の店舗を取得
+    nearby_stores = Store.near([latitude, longitude], 10) # 2km 以内の店舗を取得
     render json: nearby_stores
   end
 

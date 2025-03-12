@@ -4,7 +4,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   
   #APIのURIを記入
-  config.hosts << "b838-125-15-25-100.ngrok-free.app"
+  config.hosts << "e6e9-2400-2200-532-b398-2d17-a454-72f6-54ef.ngrok-free.app"
 
 
   

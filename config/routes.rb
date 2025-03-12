@@ -22,6 +22,8 @@ Rails.application.routes.draw do
         end
       end
 
+      resources :users, path: "users", only: [:index, :create, :update, :destroy]
+
       # resources :visit_records, path: "plot-stores", only: [:plot_stores]
     end
   end
