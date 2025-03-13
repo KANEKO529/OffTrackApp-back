@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_03_12_114154) do
+ActiveRecord::Schema[7.1].define(version: 2025_03_13_085103) do
   create_table "stores", force: :cascade do |t|
     t.string "store_name"
     t.float "latitude"
@@ -34,8 +34,11 @@ ActiveRecord::Schema[7.1].define(version: 2025_03_12_114154) do
     t.datetime "updated_at", null: false
     t.integer "store_id"
     t.integer "price"
+    t.integer "user_id"
     t.index ["store_id"], name: "index_visit_records_on_store_id"
+    t.index ["user_id"], name: "index_visit_records_on_user_id"
   end
 
   add_foreign_key "visit_records", "stores", on_delete: :cascade
+  add_foreign_key "visit_records", "users", on_delete: :cascade
 end
