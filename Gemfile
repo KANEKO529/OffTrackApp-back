@@ -54,7 +54,7 @@ gem "google-apis-sheets_v4"
 
 # gem 'rb-readline'
 
-# gem "dotenv-rails", "= 3.1.4"
+gem "dotenv-rails"
 
 # gem 'pry'
 

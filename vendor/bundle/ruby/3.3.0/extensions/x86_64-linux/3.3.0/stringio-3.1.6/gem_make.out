@@ -1,0 +1,18 @@
+current directory: /home/kanek/mywebapp/offtrackapp/backend/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.6/ext/stringio
+/home/kanek/.rbenv/versions/3.3.7/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/kanek/mywebapp/offtrackapp/backend/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.6/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250326-311616-a7qfpg sitelibdir\=./.gem.20250326-311616-a7qfpg clean
+
+current directory: /home/kanek/mywebapp/offtrackapp/backend/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.6/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250326-311616-a7qfpg sitelibdir\=./.gem.20250326-311616-a7qfpg
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: /home/kanek/mywebapp/offtrackapp/backend/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.6/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250326-311616-a7qfpg sitelibdir\=./.gem.20250326-311616-a7qfpg install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20250326-311616-a7qfpg
+
+current directory: /home/kanek/mywebapp/offtrackapp/backend/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.6/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250326-311616-a7qfpg sitelibdir\=./.gem.20250326-311616-a7qfpg clean

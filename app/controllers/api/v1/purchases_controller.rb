@@ -5,16 +5,16 @@ class Api::V1::PurchasesController < ApplicationController
 
   def record_purchase_ledger
     service = Google::Apis::SheetsV4::SheetsService.new
-    # json_key_io = File.open(Rails.root.join(ENV["GOOGLE_SERVICE_ACCOUNT_JSON"]))
-    json_key_io = File.open(Rails.root.join("config/google-service-account.json"))
+    json_key_io = File.open(Rails.root.join(ENV.fetch("GOOGLE_SERVICE_ACCOUNT_JSON")))
+    # json_key_io = File.open(Rails.root.join("config/google-service-account.json"))
 
     service.authorization = Google::Auth::ServiceAccountCredentials.make_creds(
       json_key_io: json_key_io,
       scope: Google::Apis::SheetsV4::AUTH_SPREADSHEETS
     )
 
-    # spreadsheet_id = ENV["SPREADSHEET_ID"]
-    spreadsheet_id = '1eHlGwMernEe9Un_AZBbGyCh73JXYIKybFo_CN4HZJSo'
+    spreadsheet_id = ENV.fetch("SPREADSHEET_ID")
+    # spreadsheet_id = '1eHlGwMernEe9Un_AZBbGyCh73JXYIKybFo_CN4HZJSo'
 
     sheet_name = "New仕入れ台帳"
 
