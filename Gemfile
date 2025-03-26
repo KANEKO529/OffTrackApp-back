@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.3.4"
+ruby "3.3.7"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.0"
@@ -49,4 +49,15 @@ gem "geocoder", "~> 1.8"
 gem "activerecord-import", "~> 2.1"
 
 gem 'sprockets-rails'
+
+gem "google-apis-sheets_v4"
+
+# gem 'rb-readline'
+
+# gem "dotenv-rails", "= 3.1.4"
+
+# gem 'pry'
+
+# gem 'pry-rails'
+
 

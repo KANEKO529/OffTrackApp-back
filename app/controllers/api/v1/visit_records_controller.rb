@@ -37,7 +37,8 @@ class Api::V1::VisitRecordsController < ApplicationController
       date: params[:date],
       store_id: store.id, # store_id を取得
       user_id: user.id,
-      memo: params[:memo]
+      memo: params[:memo],
+      price: params[:price]
     )
   
     if visit_record.save

@@ -5,6 +5,17 @@ class Api::V1::StoresController < ApplicationController
     render json: stores
   end
 
+  def index_1
+    query = params[:query]
+    if query.present?
+      stores = Store.where("store_name LIKE ?", "%#{query}%").limit(10) # 🔥 修正
+    else
+      stores = Store.limit(10) # 🔥 クエリがない場合は適当なデータを返す
+    end
+    render json: stores
+  end
+  
+
   def nearby
     latitude = params[:latitude].is_a?(String) ? params[:latitude].to_f : params.dig(:latitude, :latitude).to_f
     longitude = params[:longitude].is_a?(String) ? params[:longitude].to_f : params.dig(:latitude, :longitude).to_f

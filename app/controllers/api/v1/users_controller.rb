@@ -24,7 +24,7 @@ class Api::V1::UsersController < ApplicationController
   def update
     user = User.find(params[:id])
 
-    if user.update(store_params)
+    if user.update(user_params)
       render json: { message: "ユーザーデータが正常に更新されました", user: user }, status: :ok
     else
       render json: { message: "ユーザーデータの更新に失敗しました", errors: user.errors }, status: :unprocessable_entity

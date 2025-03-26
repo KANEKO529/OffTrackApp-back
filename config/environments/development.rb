@@ -4,7 +4,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   
   #APIのURIを記入
-  config.hosts << "e6e9-2400-2200-532-b398-2d17-a454-72f6-54ef.ngrok-free.app"
+  config.hosts << "5309-125-15-25-100.ngrok-free.app"
 
 
   
@@ -67,4 +67,11 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+  # begin
+  #   require 'pry'
+  #   IRB = Pry
+  # rescue LoadError
+  # end
+  
 end
