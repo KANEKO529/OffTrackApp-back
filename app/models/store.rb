@@ -1,5 +1,5 @@
 class Store < ApplicationRecord
-  has_many :visit_records
+  has_many :visit_records, dependent: :destroy
 
   # 位置情報を利用するための設定
   reverse_geocoded_by :latitude, :longitude

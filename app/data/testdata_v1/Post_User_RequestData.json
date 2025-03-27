@@ -1,0 +1,8 @@
+[
+    {
+    "user": {"email": "test1@example.com","nickname": "テストユーザー1"}
+    },
+    {
+    "user": {"email": "test2@example.com","nickname": "テストユーザー2"}
+    }
+]

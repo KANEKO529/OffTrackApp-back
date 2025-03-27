@@ -50,3 +50,14 @@ gem "activerecord-import", "~> 2.1"
 
 gem 'sprockets-rails'
 
+gem "google-apis-sheets_v4"
+
+# gem 'rb-readline'
+
+gem "dotenv-rails"
+
+# gem 'pry'
+
+# gem 'pry-rails'
+
+

@@ -19,6 +19,16 @@ Rails.application.routes.draw do
         collection do
           get "nearby", to: "stores#nearby"
           post :bulk_create # 一括登録用
+          get "search", to: "stores#index_1"  # 🔥 fetch ではなく get を使う
+        end
+      end
+
+      resources :users, path: "users", only: [:index, :create, :update, :destroy]
+
+      # 📌 仕入れ台帳を管理するAPIを追加
+      resources :purchases, path: "purchases", only: [:index, :create] do
+        collection do
+          post "record-purchase-ledger", to: "purchases#record_purchase_ledger"  # 仕入れを一括登録
         end
       end
 
