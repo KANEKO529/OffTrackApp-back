@@ -7,7 +7,8 @@ ruby "3.3.7"
 gem "rails", "~> 7.1.0"
 
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4", group: [:development, :test, :production]  # 開発環境では SQLite3 を使用
+#gem "sqlite3", "~> 1.4", group: [:development, :test, :production]  # 開発環境では SQLite3 を使用
+gem 'mysql2', '~> 0.5.5'
 
 # Webサーバー
 gem "puma", "~> 6.0", group: [:development, :test]  # 開発環境では Puma を使用
