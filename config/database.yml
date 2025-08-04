@@ -23,7 +23,7 @@ production:
   encoding: utf8mb4
   reconnect: false
   pool: 5
-  socket: /var/run/mysqld/mysqld.sock
+  socket: /run/mysqld/mysqld.sock
   database: db_production
   username: kaneko_production
   password: "-Hiromasa529"
