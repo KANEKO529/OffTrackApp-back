@@ -26,4 +26,4 @@ production:
   socket: /run/mysqld/mysqld.sock
   database: db_production
   username: kaneko_production
-  password: "-Hiromasa529"
+  password: -Hiromasa529
